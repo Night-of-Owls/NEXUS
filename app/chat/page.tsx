@@ -17,6 +17,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import ReactMarkdown from "react-markdown";
 
 type Message = {
   role: "user" | "assistant" | "error";
@@ -63,7 +64,7 @@ export default function ChatPage() {
   // Hide intro animation after 3 seconds
   useEffect(() => {
     const timer = setTimeout(() => {
-      setShowIntro(false);
+      setShowIntro(false); 
     }, 3000);
     return () => clearTimeout(timer);
   }, []);
@@ -251,7 +252,11 @@ export default function ChatPage() {
                           : "bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-tr-none"
                       )}
                     >
-                      {message.content}
+                      {message.role === "assistant" ? (
+                        <ReactMarkdown>{message.content}</ReactMarkdown>
+                      ) : (
+                        message.content
+                      )}
                     </div>
                   </div>
                 </div>
