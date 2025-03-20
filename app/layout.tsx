@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "NEXUS",
-  description: "A futuristic educational AI chatbot powered by Gemini",
-  generator: "Narayan Bhusal",
+  description: "An educational companion focused on 21st century skills for students.",
+  generator: "nayan135.com.np || naranbhusal02.me",
 };
 
 export default function RootLayout({

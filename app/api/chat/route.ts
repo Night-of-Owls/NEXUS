@@ -24,7 +24,7 @@ export async function POST(request: NextRequest) {
 
     // Updated Gemini API endpoint with the newer model
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemma-3-27b-it:generateContent?key=${apiKey}`,
       {
         method: "POST",
         headers: {
