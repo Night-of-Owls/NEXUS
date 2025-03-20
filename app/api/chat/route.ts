@@ -1,20 +1,20 @@
 import { type NextRequest, NextResponse } from "next/server"
+import { AI_PERSONALITY } from "../../../lib/ai-personality"
+
 
 export async function POST(request: NextRequest) {
   try {
+    
     const { userMessage, messages } = await request.json()
 
-    const apiKey = process.env.GEMINI_API_KEY || "AIzaSyC_AFbM-iqZUC09WC-CvNx4bJgv66aQJ-E"
+    const apiKey = process.env.GEMINI_API_KEY
 
     if (!apiKey) {
       return NextResponse.json({ error: "Gemini API key is not configured" }, { status: 500 })
     }
 
-    // Create a system prompt
-    const systemPrompt =
-      "You are NEXUS, an advanced educational AI assistant. You provide helpful, accurate, and educational responses. " +
-      "You're knowledgeable about a wide range of topics and aim to be informative while maintaining a slightly futuristic tone. " +
-      "Always be respectful, ethical, and focus on providing educational value."
+    // Replace the hardcoded system prompt with personality instructions
+    const systemPrompt = AI_PERSONALITY.baseInstructions
 
     // Create context from previous messages
     const context = messages.map((msg) => `${msg.role === "user" ? "User" : ""}: ${msg.content}`).join("\n")
