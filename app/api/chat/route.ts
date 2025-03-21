@@ -51,12 +51,17 @@ export async function POST(request: NextRequest) {
     )
 
     if (!response.ok) {
-      const errorData = await response.json()
-      console.error(" API error:", errorData)
+      let errorData;
+      try {
+        errorData = await response.json();
+      } catch (parseError) {
+        errorData = await response.text();
+      }
+      console.error(" API error:", errorData);
       return NextResponse.json(
-        { error: `Failed to get response from  API: ${JSON.stringify(errorData)}` },
+        { error: `Failed to get response from API: ${JSON.stringify(errorData)}` },
         { status: response.status },
-      )
+      );
     }
 
     const data = await response.json()
