@@ -202,7 +202,7 @@ export default function AboutPage() {
           />
           {/* Developer 5 */}
           <DeveloperCard
-            name="Siddanth Panthi"
+            name="Siddhant Panthi"
             role="UI Developer"
             initials="SP"
             gradientFrom="cyan-600"
