@@ -69,71 +69,7 @@ export default function AboutPage() {
           </Card>
         </div>
 
-        <div className="max-w-3xl mx-auto mb-16">
-          <h2 className="mb-8 text-3xl font-bold text-center text-white">
-            How NEXUS Works
-          </h2>
-          <div className="relative">
-            {/* Removed the thread-like line */}
-            <div className="relative z-10 mb-12">
-              <div className="flex items-center mb-4">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
-                  <span className="font-bold text-white">1</span>
-                </div>
-                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
-              </div>
-              <div className="pl-14">
-                <h3 className="mb-2 text-xl font-bold text-white">
-                  Ask a Question
-                </h3>
-                <p className="text-gray-400">
-                  Type your question or topic of interest in the chat interface.
-                  NEXUS works with natural language, so you can ask questions
-                  just as you would to a human tutor.
-                </p>
-              </div>
-            </div>
-
-            <div className="relative z-10 mb-12">
-              <div className="flex items-center mb-4">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
-                  <span className="font-bold text-white">2</span>
-                </div>
-                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
-              </div>
-              <div className="pl-14">
-                <h3 className="mb-2 text-xl font-bold text-white">
-                  AI Processing
-                </h3>
-                <p className="text-gray-400">
-                  NEXUS processes your question using Google's Gemini AI model,
-                  analyzing the context and intent to generate the most helpful
-                  response. The next gen AI
-                </p>
-              </div>
-            </div>
-
-            <div className="relative z-10">
-              <div className="flex items-center mb-4">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
-                  <span className="font-bold text-white">3</span>
-                </div>
-                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
-              </div>
-              <div className="pl-14">
-                <h3 className="mb-2 text-xl font-bold text-white">
-                  Educational Response
-                </h3>
-                <p className="text-gray-400">
-                  Receive a detailed, educational response tailored to your
-                  question. NEXUS provides explanations, examples, and
-                  additional resources to help deepen your understanding.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
+      
         <h2 className="mb-8 text-3xl font-bold text-center text-white">
           Meet the Team
         </h2>
@@ -216,6 +152,71 @@ export default function AboutPage() {
             }}
           />
         </div>
+        <div className="max-w-3xl mx-auto mb-16">
+          <h2 className="mb-8 text-3xl font-bold text-center text-white">
+            How NEXUS Works
+          </h2>
+          <div className="relative">
+            {/* Removed the thread-like line */}
+            <div className="relative z-10 mb-12">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
+                  <span className="font-bold text-white">1</span>
+                </div>
+                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
+              </div>
+              <div className="pl-14">
+                <h3 className="mb-2 text-xl font-bold text-white">
+                  Ask a Question
+                </h3>
+                <p className="text-gray-400">
+                  Type your question or topic of interest in the chat interface.
+                  NEXUS works with natural language, so you can ask questions
+                  just as you would to a human tutor.
+                </p>
+              </div>
+            </div>
+
+            <div className="relative z-10 mb-12">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
+                  <span className="font-bold text-white">2</span>
+                </div>
+                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
+              </div>
+              <div className="pl-14">
+                <h3 className="mb-2 text-xl font-bold text-white">
+                  AI Processing
+                </h3>
+                <p className="text-gray-400">
+                  NEXUS processes your question using Google's Gemini AI model,
+                  analyzing the context and intent to generate the most helpful
+                  response. The next gen AI
+                </p>
+              </div>
+            </div>
+
+            <div className="relative z-10">
+              <div className="flex items-center mb-4">
+                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600">
+                  <span className="font-bold text-white">3</span>
+                </div>
+                <div className="w-full h-px ml-4 bg-gradient-to-r from-purple-500 to-transparent"></div>
+              </div>
+              <div className="pl-14">
+                <h3 className="mb-2 text-xl font-bold text-white">
+                  Educational Response
+                </h3>
+                <p className="text-gray-400">
+                  Receive a detailed, educational response tailored to your
+                  question. NEXUS provides explanations, examples, and
+                  additional resources to help deepen your understanding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className="max-w-3xl p-8 mx-auto text-center border rounded-lg border-gray-800 bg-gray-900/50">
           <h2 className="mb-4 text-2xl font-bold text-white">
             Ready to Experience NEXUS?
